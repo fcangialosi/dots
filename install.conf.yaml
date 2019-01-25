@@ -1,0 +1,26 @@
+- defaults: 
+    link:
+        relink: true
+        create: true
+
+- link: 
+    ~/.gitconfig: gitconfig
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux.conf
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.zsh: zsh
+
+- shell:
+    - git submodule sync --recursive
+    - git sub-sync
+    - 
+        command: vim --not-a-term +PlugInstall +qall
+        stdin: false
+        stdout: true
+        stderr: true
+        quiet: false
+
+
+- clean: ['~']

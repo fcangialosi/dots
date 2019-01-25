@@ -1,0 +1,35 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+    name = Frank Cangialosi
+    email = frankc@csail.mit.edu
+    editor = "vim"
+
+[color]
+    ui = auto
+    interactive = auto
+    diff = auto
+
+[log]
+	date = relative
+[format]
+	pretty = format:%C(auto,yellow)%h%C(auto,magenta) %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(8,trunc)%aN %C(auto,reset)%s%C(auto,red)% gD% D
+
+[diff]
+    compactionHeuristic = true
+
+[alias]
+    lg = log --oneline --graph --all --color
+    fe = fetch --all --prune
+    st = status
+    co = commit -m "tmp"
+    fb = rebase -i HEAD~2
+    sub-sync = submodule update --init --recursive
+    sub-pull = submodule update --init --remote
+
+[core]
+    editor = /usr/bin/vim
+[push]
+        default = simple
+[submodule]
+	recurse = true
