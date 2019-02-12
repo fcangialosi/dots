@@ -39,6 +39,7 @@ Plug 'skywind3000/asyncrun.vim'
 
 " Syntax
 Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
 Plug 'rust-lang/rust.vim'
 
 " Docs
@@ -61,7 +62,7 @@ map <Leader>r :autocmd BufWritePost * AsyncRun make<cr>
 nnoremap <C-c> :call asyncrun#quickfix_toggle(10)<cr>
 
 " => Bootlin, set version for non-linux machines
-let g:bootlin_version = "4.19.1"
+" let g:bootlin_version = "4.19.1"
 
 " => Lightline
 " needed for display
@@ -69,11 +70,20 @@ set laststatus=2
 " modify left side of line to add buildstatus from asyncrun
 let g:lightline = {
     \ 'active' : {
-    \    'left' : [ ['mode', 'paste'], ['readonly', 'filename', 'modified', 'buildstatus'] ]
+    \    'left' : [ ['mode', 'paste'], ['readonly', 'filename', 'modified', 'buildstatus', 'linter_checking', 'linter_warnings', 'linter_errors'] ]
     \},
     \ 'component' : {
     \    'buildstatus' : '%{g:asyncrun_status}'
     \}
+\}
+
+let g:lightline#ale#indicator_checking = "✍"
+let g:lightline#ale#indicator_warnings = "~"
+let g:lightline#ale#indicator_errors = "✘"
+let g:lightline.component_expand = {
+    \ 'linter_checking' : 'lightline#ale#checking',
+    \ 'linter_warnings' : 'lightline#ale#warnings',
+    \ 'linter_errors' : 'lightline#ale#errors',
 \}
 
 
