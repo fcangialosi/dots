@@ -27,9 +27,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'Valloric/YouCompleteMe', {'do' : './install.py --clang-completer --go-completer --rust-completer' }
-let g:loaded_youcompleteme = 1
-" TODO Is this still useful?
-Plug 'prabirshrestha/async.vim'
+""let g:loaded_youcompleteme = 1
 Plug 'prabirshrestha/vim-lsp'
 Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
