@@ -13,6 +13,23 @@
     ~/.zsh: zsh
     ~/.ssh: private/.ssh
 
+- system:
+    rust:
+        find: which rustup
+        any: curl https://sh.rustup.rs -sSf | sh
+        extras: [
+            rustup component add rustfmt rust-src rls-preview,
+            rustup toolchain add nightly,
+            rustup default nightly
+        ]
+    zsh:
+        find: which zsh
+        macos: brew install zsh
+        ubuntu: sudo apt-get install zsh
+    oh_my_zsh:
+        find: ls ~/.oh-my-zsh > /dev/null && echo "~/.oh-my-zsh"
+        any: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/"
+
 - shell:
     - git submodule sync --recursive
     - git sub-sync
