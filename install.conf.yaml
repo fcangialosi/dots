@@ -17,10 +17,10 @@
     - git sub-sync
     - 
         command: vim --not-a-term +PlugInstall +qall
-        stdin: false
+        stdin: true
         stdout: true
         stderr: true
-        quiet: false
+        quiet: true
 
 
 - clean: ['~']
