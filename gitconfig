@@ -26,6 +26,7 @@
     fb = rebase -i HEAD~2
     sub-sync = submodule update --init --recursive
     sub-pull = submodule update --init --remote
+    pl = !git pull --rebase && git submodule update --init --recursive
 
 [core]
     editor = /usr/bin/vim
