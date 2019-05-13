@@ -2,10 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/frank/.oh-my-zsh
-
-# 6.824 gopath
-export GOPATH=/Users/frank/go-work
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -91,7 +88,7 @@ alias brew="nocorrect brew"
 alias gokwm="nocorrect brew services start kwm"
 alias stopkwm="nocorrect brew services stop kwm"
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/dots/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
@@ -121,3 +118,5 @@ zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
 . $HOME/.zsh/z/z.sh
+
+export PATH="$HOME/.cargo/bin:$PATH"

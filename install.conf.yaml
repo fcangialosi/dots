@@ -30,6 +30,9 @@
     oh_my_zsh:
         find: ls ~/.oh-my-zsh > /dev/null && echo "~/.oh-my-zsh"
         any: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    syntax:
+        find: ls /home/frank/dots/zsh-syntax-highlighting > /dev/null && echo "/home/frank/dots/zsh-syntax-highlighting"
+        any: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 
 - shell:
