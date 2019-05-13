@@ -2,6 +2,7 @@
     link:
         relink: true
         create: true
+        force: true
 
 - link: 
     ~/.gitconfig: gitconfig
@@ -28,7 +29,8 @@
         ubuntu: sudo apt-get install zsh
     oh_my_zsh:
         find: ls ~/.oh-my-zsh > /dev/null && echo "~/.oh-my-zsh"
-        any: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/"
+        any: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 
 - shell:
     - git submodule sync --recursive
