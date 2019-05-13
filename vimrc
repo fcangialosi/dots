@@ -2,7 +2,7 @@
 let mapleader = "\<Space>"
 let g:mapleader ="\<Space>"
 
-set pythondll=/Library/Frameworks/Python.framework/Versions/3.5/lib/libpython3.5.dylib
+""set pythondll=/Library/Frameworks/Python.framework/Versions/3.5/lib/libpython3.5.dylib
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
@@ -16,6 +16,7 @@ Plug 'atelierbram/vim-colors_atelier-schemes'
 " Navigation
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'gcmt/taboo.vim'
 
 " Status
 Plug 'itchyny/lightline.vim'
@@ -83,6 +84,9 @@ let g:lightline.component_expand = {
     \ 'linter_warnings' : 'lightline#ale#warnings',
     \ 'linter_errors' : 'lightline#ale#errors',
 \}
+
+nmap <silent> <C-j> :ALENext<cr>
+nmap <silent> <C-k> :ALEPrevious<cr>
 
 
 " Goto definition for YCM
