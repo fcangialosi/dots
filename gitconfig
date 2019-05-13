@@ -27,6 +27,7 @@
     sub-sync = submodule update --init --recursive
     sub-pull = submodule update --init --remote
     pl = !git pull --rebase && git submodule update --init --recursive
+    history = log --full-history --
 
 [core]
     editor = /usr/bin/vim
