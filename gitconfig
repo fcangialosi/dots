@@ -1,8 +1,6 @@
-# This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
     name = Frank Cangialosi
-    email = frankc@csail.mit.edu
+    email = fcangialosi@fb.com
     editor = "vim"
 
 [color]
