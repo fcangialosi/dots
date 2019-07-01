@@ -217,7 +217,7 @@ set lazyredraw
 " Relative line numbers, except the current line, and highlight it 
 set number 
 set relativenumber
-hi CursorLineNr ctermfg=231
+" "hi CursorLineNr ctermfg=231
 " Vertical line at 100-char limit
 set colorcolumn=100
 set showcmd
