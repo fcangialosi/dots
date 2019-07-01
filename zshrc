@@ -88,7 +88,7 @@ alias brew="nocorrect brew"
 alias gokwm="nocorrect brew services start kwm"
 alias stopkwm="nocorrect brew services stop kwm"
 
-source $HOME/dots/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.dots/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
