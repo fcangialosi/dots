@@ -12,6 +12,7 @@ filetype off
 call plug#begin('~/.vim/plugged')
 " Colors
 Plug 'atelierbram/vim-colors_atelier-schemes'
+Plug 'jeffkreeftmeijer/vim-dim'
 
 " Navigation
 Plug 'scrooloose/nerdtree'
@@ -111,8 +112,8 @@ let g:indentLine_char = "▏"
 " => Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
-set background=dark
-colorscheme Atelier_DuneDark
+" set background=dark
+colorscheme dim
 
 " Manually set some filetypes
 au BufRead,BufNewFile *.ejs setfiletype html
