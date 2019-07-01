@@ -6618,7 +6618,9 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dots</string>
+	<string>~/Documents</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<true/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -6660,27 +6662,27 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>546 1411 663 210 -240 1050 1920 1080 </string>
+	<string>661 1138 663 224 -125 1050 1920 1080 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>712 593 400 129 0 0 1680 1050 </string>
+	<string>635 1763 400 129 -125 1050 1920 1080 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>490 424 700 484 0 0 1680 1050 </string>
+	<string>485 1497 700 484 -125 1050 1920 1080 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>221 110 606 469 0 0 1680 1050 </string>
+	<string>145 1114 599 521 -125 1050 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>235 1545 796 486 -240 1050 1920 1080 </string>
+	<string>479 1673 918 423 -125 1050 1920 1080 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 466 592 584 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-240 1050 1920 1080 -240 1050 1920 1080 </string>
+	<string>-125 1181 1538 949 -125 1050 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-240 2479 650 479 0 0 1680 1050 </string>
+	<string>0 531 1680 514 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>-240 2486 650 479 0 0 1680 1050 </string>
+	<string>0 24 1680 1026 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>-240 2486 650 479 0 0 1680 1050 </string>
+	<string>842 0 836 1050 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>-240 2475 650 479 0 0 1680 1050 </string>
+	<string>555 323 570 404 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>212 106 650 479 0 0 1680 1050 </string>
 	<key>NeverWarnAboutShortLivedSessions_1736457A-E572-48BD-B6CD-271E529E7C93</key>
@@ -7402,7 +7404,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SauceCodePowerline-Regular 12</string>
+			<string>SFMonoNerdFontC-Regular 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -8748,7 +8750,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SFMono-Regular 14</string>
+			<string>SFMonoNerdFontC-Regular 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -8833,20 +8835,24 @@
 			<string>/Users/frank</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>34FCDD54-DE9A-4043-B1BC-6D2F7F0DAB4B</string>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
-	<true/>
-	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<string>CBEB9A4B-92FC-41A1-989C-C40A10DCA274</string>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
+	<key>NoSyncSaveDocumentAsPathSet_saveDocumentAs:</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncSuppressClipboardAccessDeniedWarning</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>582076477.68966198</real>
+	<real>502424693.59068102</real>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
 	<key>PMPrintingExpandedStateForPrint2</key>
@@ -8899,7 +8905,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-02-11T16:00:14Z</date>
+	<date>2019-07-01T16:20:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -8925,6 +8931,8 @@
 		<string>Profiles</string>
 		<string>Captured Output</string>
 	</array>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1548204416</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
