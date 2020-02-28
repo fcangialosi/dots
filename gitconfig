@@ -32,4 +32,9 @@
 [push]
         default = simple
 [submodule]
-	recurse = true
+    recurse = true
+
+[http]
+        proxy = fwdproxy:8080
+[https]
+        proxy = fwdproxy:8080
