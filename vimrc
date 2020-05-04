@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 " Colors
 Plug 'atelierbram/vim-colors_atelier-schemes'
 Plug 'jeffkreeftmeijer/vim-dim'
+Plug 'chriskempson/base16-vim'
 
 " Navigation
 Plug 'scrooloose/nerdtree'
@@ -28,7 +29,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'Valloric/YouCompleteMe', {'do' : './install.py --clang-completer --go-completer --rust-completer' }
+" "Plug 'Valloric/YouCompleteMe', {'do' : './install.py --clang-completer --go-completer --rust-completer' }
 ""let g:loaded_youcompleteme = 1
 Plug 'prabirshrestha/vim-lsp'
 Plug 'tpope/vim-surround'
@@ -46,7 +47,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'Shougo/echodoc.vim'
 
 " Extra
-Plug 'fcangialosi/bootlin.vim'
+" Plug 'fcangialosi/bootlin.vim'
 call plug#end()
 
 " => AsyncRun
@@ -70,11 +71,14 @@ set laststatus=2
 " modify left side of line to add buildstatus from asyncrun
 let g:lightline = {
     \ 'active' : {
-    \    'left' : [ ['mode', 'paste'], ['readonly', 'filename', 'modified', 'buildstatus', 'linter_checking', 'linter_warnings', 'linter_errors'] ]
+    \    'left' : [ ['mode', 'paste'], ['readonly', 'filename', 'modified', 'buildstatus', 'linter_checking', 'linter_warnings', 'linter_errors'] ],
+    \    'right' : []
     \},
     \ 'component' : {
-    \    'buildstatus' : '%{g:asyncrun_status}'
-    \}
+    \    'buildstatus' : '%{g:asyncrun_status}',
+    \    'gitbranch' : 'FugitiveHead'
+    \},
+    \ 'colorscheme' : 'wombat'
 \}
 
 let g:lightline#ale#indicator_checking = "✍"
@@ -113,7 +117,29 @@ let g:indentLine_char = "▏"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 " set background=dark
-colorscheme dim
+" "colorscheme dim
+
+" deal with colors
+if !has('gui_running')
+  set t_Co=256
+endif
+if (match($TERM, "-256color") != -1) && (match($TERM, "screen-256color") == -1)
+  " screen does not (yet) support truecolor
+  set termguicolors
+endif
+
+set background=dark
+colorscheme base16-gruvbox-dark-hard
+hi Normal ctermbg=NONE
+" call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")
+
+
+
+
+
+
+
+
 
 " Manually set some filetypes
 au BufRead,BufNewFile *.ejs setfiletype html
@@ -219,7 +245,7 @@ set number
 set relativenumber
 " "hi CursorLineNr ctermfg=231
 " Vertical line at 100-char limit
-set colorcolumn=100
+" set colorcolumn=100
 set showcmd
 " Enable mouse usage
 set mouse=a
