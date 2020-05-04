@@ -249,9 +249,13 @@ set relativenumber
 set showcmd
 " Enable mouse usage
 set mouse=a
-set shortmess+=c
+" set shortmess+=c
 " Disable fold on load
 set nofoldenable
+
+"
+hi Search ctermfg=black
+hi Search ctermbg=green
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editor
