@@ -35,6 +35,6 @@
     recurse = true
 
 [http]
-        proxy = fwdproxy:8080
+        proxy = http://fwdproxy:8080
 [https]
-        proxy = fwdproxy:8080
+        proxy = http://fwdproxy:8080
