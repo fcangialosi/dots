@@ -27,6 +27,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
+let g:gitgutter_enabled = 0
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " "Plug 'Valloric/YouCompleteMe', {'do' : './install.py --clang-completer --go-completer --rust-completer' }
@@ -131,9 +132,9 @@ endif
 set background=dark
 colorscheme base16-gruvbox-dark-hard
 hi Normal ctermbg=NONE
+hi LineNr ctermfg=lightgray ctermbg=darkgray
+hi CursorLineNr ctermfg=lightgray ctermbg=blue
 " call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm09, "", "", "")
-
-
 
 
 
@@ -255,7 +256,7 @@ set nofoldenable
 
 "
 hi Search ctermfg=black
-hi Search ctermbg=green
+hi Search ctermbg=blue
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editor
