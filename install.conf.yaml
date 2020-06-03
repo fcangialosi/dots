@@ -38,6 +38,7 @@
 - shell:
     - git submodule sync --recursive
     - git sub-sync
+    - sudo yum install git-subtree # needed for third-party2
     - 
         command: vim --not-a-term +PlugInstall +qall
         stdin: true
