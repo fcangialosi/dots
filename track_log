@@ -1,0 +1,1 @@
+watch --color --interval 3 "hg fsl --color=always"
